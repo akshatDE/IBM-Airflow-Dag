@@ -10,10 +10,25 @@ This project is part of the IBM Data Engineering Professional Certificate. It de
 
 ## File Structure
 Below is a simplified view of the key files and folders:
+.
+├── dags
+│ ├── ETL_dag.py
+│ └── data
+│ ├── vehicle-data.csv
+│ ├── tollplaza-data.tsv
+│ ├── payment-data.txt
+│ ├── vehicle-data-extracted.csv
+│ ├── vehicle-data-extracted-tsv.csv
+│ ├── vehicle-data-extracted-fixedwidth.csv
+│ ├── consolidated-data.csv
+│ └── staging
+│ └── transformed_data.csv
+├── docker-compose.yml
+└── README.md
 
 
 - **ETL_dag.py** – Airflow DAG that orchestrates the ETL process.
-- **finalassignment/data/** – Directory containing source data and generated output files.
+- **data/** – Directory containing source data and generated output files.
 - **docker-compose.yml** – Example Docker file for running Airflow locally.
 
 ## ETL Workflow
@@ -31,7 +46,7 @@ Each step uses Bash commands (cut, paste, awk) within Airflow’s BashOperator.
 3. Adjust file paths in ETL_dag.py if needed.
 4. Make sure you have the input files (CSV, TSV, fixed-width) in the correct directory.
 5. Start Airflow (either locally or using Docker).
-6. Trigger the “ETL_toll_data” DAG from the Airflow UI.
+6. Trigger the “ETL_toll_data” DAG from the Airflow UI.\
 
 ## Docker Setup
 If you prefer to run Airflow in Docker, ensure your docker-compose.yml includes volume mounts for:
