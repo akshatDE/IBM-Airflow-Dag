@@ -9,22 +9,26 @@ This project is part of the IBM Data Engineering Professional Certificate. It de
 - Bash-based tools (cut, paste, awk)
   
 ## Project Directory Structure
+<pre>
+  .
+├── dags
+│   ├── ETL_dag.py
+│   └── finalassignment
+│       └── data
+│           ├── vehicle-data.csv
+│           ├── tollplaza-data.tsv
+│           ├── payment-data.txt
+│           ├── vehicle-data-extracted.csv
+│           ├── vehicle-data-extracted-tsv.csv
+│           ├── vehicle-data-extracted-fixedwidth.csv
+│           ├── consolidated-data.csv
+│           └── staging
+│               └── transformed_data.csv
+├── docker-compose.yml
+└── README.md
+  
+</pre>
 
-- dags
-  - ETL_dag.py
-  - finalassignment
-    - data
-      - vehicle-data.csv
-      - tollplaza-data.tsv
-      - payment-data.txt
-      - vehicle-data-extracted.csv
-      - vehicle-data-extracted-tsv.csv
-      - vehicle-data-extracted-fixedwidth.csv
-      - consolidated-data.csv
-      - staging
-        - transformed_data.csv
-- docker-compose.yml
-- README.md
 
 
 - **ETL_dag.py** – Airflow DAG that orchestrates the ETL process.
