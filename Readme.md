@@ -7,24 +7,24 @@ This project is part of the IBM Data Engineering Professional Certificate. It de
 - Apache Airflow (running locally, in Docker, or another environment)
 - Python 3.x
 - Bash-based tools (cut, paste, awk)
+  
+## Project Directory Structure
 
-## File Structure
-Below is a simplified view of the key files and folders:
-.
-├── dags
-│ ├── ETL_dag.py
-│ └── data
-│ ├── vehicle-data.csv
-│ ├── tollplaza-data.tsv
-│ ├── payment-data.txt
-│ ├── vehicle-data-extracted.csv
-│ ├── vehicle-data-extracted-tsv.csv
-│ ├── vehicle-data-extracted-fixedwidth.csv
-│ ├── consolidated-data.csv
-│ └── staging
-│ └── transformed_data.csv
-├── docker-compose.yml
-└── README.md
+- dags
+  - ETL_dag.py
+  - finalassignment
+    - data
+      - vehicle-data.csv
+      - tollplaza-data.tsv
+      - payment-data.txt
+      - vehicle-data-extracted.csv
+      - vehicle-data-extracted-tsv.csv
+      - vehicle-data-extracted-fixedwidth.csv
+      - consolidated-data.csv
+      - staging
+        - transformed_data.csv
+- docker-compose.yml
+- README.md
 
 
 - **ETL_dag.py** – Airflow DAG that orchestrates the ETL process.
